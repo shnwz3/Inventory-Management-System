@@ -32,7 +32,7 @@ function Sales() {
 
   // Fetching Data of All Sales
   const fetchSalesData = useCallback(() => {
-    fetch(`http://localhost:4000/api/sales/get/${authContext.user}`)
+    fetch(`https://inventrx-back.vercel.app/api/sales/get/${authContext.user}`)
       .then((response) => response.json())
       .then((data) => {
         setAllSalesData(data);
@@ -42,7 +42,7 @@ function Sales() {
 
   // Fetching Data of All Products
   const fetchProductsData = useCallback(() => {
-    fetch(`http://localhost:4000/api/product/get/${authContext.user}`)
+    fetch(`https://inventrx-back.vercel.app/api/product/get/${authContext.user}`)
       .then((response) => response.json())
       .then((data) => {
         setAllProducts(data);
@@ -67,7 +67,7 @@ function Sales() {
 
   // Delete Sale
   const deleteSale = (id) => {
-    fetch(`http://localhost:4000/api/sales/delete/${id}`, {
+    fetch(`https://inventrx-back.vercel.app/api/sales/delete/${id}`, {
       method: "DELETE",
     })
       .then((result) => {

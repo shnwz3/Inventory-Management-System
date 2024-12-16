@@ -23,7 +23,7 @@
 //   const cancelButtonRef = useRef(null);
 
 //   const addProduct = () => {
-//     fetch("http://localhost:4000/api/store/add", {
+//     fetch("https://inventrx-back.vercel.app/api/store/add", {
 //       method: "POST",
 //       headers: {
 //         "Content-type": "application/json",
