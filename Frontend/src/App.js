@@ -12,7 +12,7 @@ import ProtectedWrapper from "./ProtectedWrapper";
 import Sales from "./pages/Sales";
 import PurchaseDetails from "./pages/PurchaseDetails";
 import "./index.css";
-import Revenue from "./pages/revenue/Revenue";
+
 
 const App = () => {
   const [user, setUser] = useState("");
@@ -75,7 +75,7 @@ const App = () => {
             <Route path="/purchase-details" element={<PurchaseDetails />} />
             <Route path="/sales" element={<Sales />} />
             <Route path="/pos" element={<POS />} />
-            <Route path="/revenue" element={<Revenue />}></Route>
+            
           </Route>
           <Route path="*" element={<NoPageFound />} />
         </Routes>
